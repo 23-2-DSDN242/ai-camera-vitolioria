@@ -1,9 +1,10 @@
 let sourceImg=null;
 let maskImg=null;
+let renderCounter=0;
 
 // change these three lines as appropiate
-let sourceFile = "input_1.jpg";
-let maskFile   = "mask_1.png";
+let sourceFile = "input_5.jpg";
+let maskFile   = "mask_5.png";
 let outputFile = "output_1.png";
 
 function preload() {
@@ -17,55 +18,36 @@ function setup () {
 
   imageMode(CENTER);
   noStroke();
-  background(0, 0, 128);
+  background(24, 138, 237);
   sourceImg.loadPixels();
   maskImg.loadPixels();
-  colorMode(HSB);
 }
 
-// let X_STOP = 640;
-// let Y_STOP = 480;
-let X_STOP = 1920;
-let Y_STOP = 1080;
+let X_STOP = 640;
+let Y_STOP = 480;
+// let X_STOP = 1920;
+// let Y_STOP = 1080;
 let OFFSET = 20;
 
 let renderCounter=0;
 function draw () {
-  angleMode(DEGREES);
-  let num_lines_to_draw = 40;
-  let x = floor(random(sourceImg.width));
+  for(let i=0;i<4000;i++) {
+    let x = floor(random(sourceImg.width));
     let y = floor(random(sourceImg.height));
     let pix = sourceImg.get(x, y);
-    //let mask = maskImg.get(x, y);
+    let mask = maskImg.get(x, y);
     fill(pix);
-  // get one scanline
-  for(let j=renderCounter; j<renderCounter+num_lines_to_draw && j<Y_STOP; j++) {
-    for(let i=0; i<X_STOP; i++) {
-      colorMode(RGB);
-      let mask = maskImg.get(i, j);
-      if (mask[1] < 128) {
-        let wave = sin(j*8);
-        let slip = map(wave, -1, 1, -OFFSET, OFFSET);
-        pix = sourceImg.get(i+slip, j);
-      }
-      else {
-        let pointSize = 200;
-        rect(x, y, pointSize, pointSize);    
-
-        // let brt = map(wave, -1, 1, 0, 255);
-        // for(let c=0; c<3; c++) {
-        //   pix[c] = brt;
-        // }
-      }
-
-      set(i, j, pix);
+    if(mask[0] > 128) {
+      let pointSize = 10;
+      ellipse(x, y, pointSize, pointSize);
+    }
+    else {
+      let pointSize = 20;
+      rect(x, y, pointSize, pointSize);    
     }
   }
-  renderCounter = renderCounter + num_lines_to_draw;
-  updatePixels();
-
-  // print(renderCounter);
-  if(renderCounter > Y_STOP) {
+  renderCounter = renderCounter + 1;
+  if(renderCounter > 10) {
     console.log("Done!")
     noLoop();
     // uncomment this to save the result
