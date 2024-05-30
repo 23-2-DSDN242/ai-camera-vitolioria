@@ -29,10 +29,10 @@ let outputFile = "output_1.png";
   }
 
 function draw () {
-  r = random(10,255); // r is a random number between 0 - 255
-  g = random(10,255); // g is a random number betwen 100 - 205
-  b = random(20,255); // b is a random number between 0 - 100
-  a = random(20,100); // a is a random number between 200 - 255
+  r = random(10,255); // random value for r 
+  g = random(10,255); // random value for g
+  b = random(20,255); // random value for b
+  a = random(20,100); // random value for a
   
   for(let i=0;i<5000;i++) {
     
@@ -50,15 +50,14 @@ function draw () {
        rect(x, y, pointSize*2, pointSize/3);  
        pop()
       
-      if (i <= 1000){
-        fill(r,g,b,50)
-        let pointSize = 10;
+      if (i <= 1000){// will only be drawn when the i counter is greater or less than 1000
+      fill(r,g,b,50) //random colour outputs 
+       let pointSize = 10; //size of ellipses
        push()
-       stroke(255)
+       stroke(255) //white outline for ellipses
        ellipse(x, y, pointSize*2, pointSize/3);
        pop() //allows the stroke to only occur for this specified ellipses and no other pixels 
-      
-      } 
+    } 
      
     }
     else { // unmasked area - ocean 
