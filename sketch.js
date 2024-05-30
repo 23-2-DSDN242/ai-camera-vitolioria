@@ -7,7 +7,6 @@ let sourceImg=null;
 let maskImg=null;
 let renderCounter=0;
 
-// change these three lines as appropiate
 let sourceFile = "input_new2.jpg";
 let maskFile   = "mask_new2.png";
 let outputFile = "output_1.png";
@@ -43,7 +42,7 @@ function draw () {
     
     fill(pix);
 
-    if(mask[0] > 128) {
+    if(mask[0] > 128) { //masked area - ocean 
       let pointSize = 20;
       push()
        stroke(r,g,b,a)
@@ -60,7 +59,7 @@ function draw () {
     } 
      
     }
-    else { // unmasked area - ocean 
+    else { // unmasked area - scenery 
       fill(pix)
       let pointSize = 1;
       rect(x, y, pointSize*5, pointSize*5);
