@@ -8,8 +8,8 @@ let maskImg=null;
 let renderCounter=0;
 
 // change these three lines as appropiate
-let sourceFile = "input_new5.jpg";
-let maskFile   = "mask_new5.png";
+let sourceFile = "input_new2.jpg";
+let maskFile   = "mask_new2.png";
 let outputFile = "output_1.png";
 
   function preload() {
@@ -45,12 +45,16 @@ function draw () {
 
     if(mask[0] > 128) {
       let pointSize = 20;
-      rect(x, y, pointSize*2, pointSize/3);  
+      push()
+       stroke(r,g,b,a)
+       rect(x, y, pointSize*2, pointSize/3);  
+       pop()
+      
       if (i <= 1000){
-        fill(r,g,b,75)
+        fill(r,g,b,50)
         let pointSize = 10;
        push()
-       stroke(r,g,b,a)
+       stroke(255)
        ellipse(x, y, pointSize*2, pointSize/3);
        pop() //allows the stroke to only occur for this specified ellipses and no other pixels 
       
@@ -74,7 +78,7 @@ function draw () {
     console.log("Done!")
     noLoop();
     // uncomment this to save the result
-    // saveArtworkImage(outputFile);
+    saveArtworkImage(outputFile);
   }
 }
 
