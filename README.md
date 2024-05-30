@@ -4,11 +4,9 @@
 
 **Final Output**
 ![output_5](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/4166149e-c62d-4ed6-b4ef-06f4e51823e5)
-My final output was inspired by pixel art 
 
 ---
 
-   
 **Initial sketch and assignment understanding**
 
 Going into this assignment, I wanted to focus on pop culture. Specifically on my anime figures. I was planning on having the figure/s be the main focus and somewhat 'glow' while the background stayed neutral or had no change at all. Even though I enjoyed the idea, I wasn't able to continue due to the AI not being able to pick up what I wanted:
@@ -25,7 +23,7 @@ Going into this assignment, I wanted to focus on pop culture. Specifically on my
 ![input_new1](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/4f9a1fd9-a5bd-4632-bceb-9afbb50f42a7)  
 ![mask_new1](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/a84c4b71-1955-4b75-8c9c-52f7c89b9b14)
 
-Because of this, I had to quickly change to an idea that could be easy for the AI system to understand and to mask out. I decided to grab images that I captured of the ocean but was also pleasant to look at. I figured that the AI would be able to easily understand the different environments and pick out what to mask out compared to my previous idea where the environment was quite different from each image. I decided to have the ocean in each image be masked out and was positive that the AI would be able to mask the ocean out.
+Because of this, I had to quickly change to an idea that could be easy for the AI system to understand and to mask out. I decided to grab images that I captured of the ocean but was also pleasant to look at. I figured that the AI system would be able to easily understand the different environments and pick out what to mask out compared to my previous idea where the environment was quite different from each image. I decided to have the ocean in each image be masked out and was positive that the AI would be able to mask the ocean out.
 
 ### Images masked by me:
 ![mask_1](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/5fcd82bc-4bb3-4aae-9c86-e37c6f7dbc0f)
@@ -40,6 +38,7 @@ Because of this, I had to quickly change to an idea that could be easy for the A
 ![mask_new2](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/b8b21af6-9735-475e-a91a-ae078bc37627)
 ![input_new2](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/1520322c-ed0a-418c-ae63-17198d657c8c)
 
+When thinking of how to change the image pixels, my first inspiration was looking at pixel art online but also from colouring books where one colour in a speck in a specified colour. I wanted the final image to portray this and mock a painting-like output. Although I didn't change much of the pixel treatment code, I tried to have it so the output replicated the painting idea. I also enjoyed the look of how the final render makes the ocean move and so I had the render counter a
 
-
+(gif for reference - probably have to refresh to see movement)
 ![Final](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/ec5af905-d82c-4f58-b2a6-1c6e763bcbb4)
