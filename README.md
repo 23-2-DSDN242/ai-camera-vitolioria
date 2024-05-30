@@ -6,10 +6,7 @@
 ![output_5](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/4166149e-c62d-4ed6-b4ef-06f4e51823e5)
 
 ---
-
-**Initial sketch and assignment understanding**
-
-Going into this assignment, I wanted to focus on pop culture. Specifically on my anime figures. I was planning on having the figure/s be the main focus and somewhat 'glow' while the background stayed neutral or had no change at all. Even though I enjoyed the idea, I wasn't able to continue due to the AI not being able to pick up what I wanted:
+Going into this assignment, I struggled with wrapping my head around what to actually do and what was being asked. This was due to me being used to the previous assignments but I did enjoy the outcome/process. Initially wanted to focus on pop culture. Specifically on my anime figures. I was planning on having the figure/s be the main focus and somewhat 'glow' while the background stayed neutral or had no change at all. Even though I enjoyed the idea, I wasn't able to continue due to the AI not being able to pick up what I wanted:
 
 ### Images masked by me:
 
@@ -38,7 +35,9 @@ Because of this, I had to quickly change to an idea that could be easy for the A
 ![mask_new2](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/b8b21af6-9735-475e-a91a-ae078bc37627)
 ![input_new2](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/1520322c-ed0a-418c-ae63-17198d657c8c)
 
-When thinking of how to change the image pixels, my first inspiration was looking at pixel art online but also from colouring books where one colour in a speck in a specified colour. I wanted the final image to portray this and mock a painting-like output. Although I didn't change much of the pixel treatment code, I tried to have it so the output replicated the painting idea. I also enjoyed the look of how the final render makes the ocean move and so I had the render counter a
+When thinking of how to change the image pixels, my first inspiration was looking at pixel art online but also from colouring books where one colours in a speck in a specified colour. I wanted the final image to portray this and mock a painting-like output. Although I didn't change much of the pixel treatment code, I tried to have it so the output replicated the painting idea. Even though this project isn't focused on a GIF/ movement output, I enjoyed the look of how the final render makes the ocean move, so I had the render counter stop at a higher time point so you can see how the ocean 'moves' with the rect and ellipses being created and repeated when rendering. 
 
 (gif for reference - probably have to refresh to see movement)
 ![Final](https://github.com/23-2-DSDN242/ai-camera-vitolioria/assets/147349823/ec5af905-d82c-4f58-b2a6-1c6e763bcbb4)
+
+
