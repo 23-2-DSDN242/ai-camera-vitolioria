@@ -9,7 +9,7 @@ let renderCounter=0;
 
 let sourceFile = "input_new2.jpg";
 let maskFile   = "mask_new2.png";
-let outputFile = "output_1.png";
+let outputFile = "output5_.png";
 
   function preload() {
     sourceImg = loadImage(sourceFile);
@@ -76,7 +76,7 @@ function draw () {
     console.log("Done!")
     noLoop();
     // uncomment this to save the result
-    saveArtworkImage(outputFile);
+    //saveArtworkImage(outputFile);
   }
 }
 
