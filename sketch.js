@@ -28,6 +28,7 @@ let outputFile = "output5_.png";
   }
 
 function draw () {
+  //setting up random values for colours value to be used later on
   r = random(10,255); // random value for r 
   g = random(10,255); // random value for g
   b = random(20,255); // random value for b
@@ -40,12 +41,12 @@ function draw () {
     let pix = sourceImg.get(x, y);
     let mask = maskImg.get(x, y);
     
-    fill(pix);
+    fill(pix); //pixels will be filled as the image rather than a singular colour 
 
     if(mask[0] > 128) { //masked area - ocean 
       let pointSize = 20;
       push()
-       stroke(r,g,b,a)
+       stroke(r,g,b,a) //stroke of rectangles will be a random colour value but still be filled as (pix)
        rect(x, y, pointSize*2, pointSize/3);  
        pop()
       
@@ -64,9 +65,9 @@ function draw () {
       let pointSize = 1;
       rect(x, y, pointSize*5, pointSize*5);
        
-      if (i <= 2000){
-          fill(r/2,g/5,b*5,55)
-          let pointSize = 15;
+      if (i <= 2000){ // will only be drawn when the i counter is greater or less than 2000
+          fill(r/2,g/5,b*5,55)//random colour outputs 
+          let pointSize = 15; //size of rects
           rect(x, y, pointSize/2, pointSize/3);
       }
     }
